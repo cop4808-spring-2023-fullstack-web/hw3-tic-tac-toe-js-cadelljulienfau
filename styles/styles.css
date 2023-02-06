@@ -105,3 +105,19 @@ h1,h6{
     align-items: center;
   
   }
+
+  .btn {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 1000;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+  }
+  
+  #score1,#score2,#score3{
+    color: black;
+    position: right;
+    float: right;
+    font-weight: 1000;
+  }
