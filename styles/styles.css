@@ -55,3 +55,32 @@ h1,h6{
       align-items: center;
       grid-template-columns: repeat(3, auto);
   }
+
+  .tiles {
+	height: var(--tiles-size);
+	width: var(--tiles-size);
+	background-color: white;
+	border: 1px solid lightblue;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+    opacity: 88%;
+}
+
+.tiles.x {
+	background-color: aquamarine;
+  background-image: url(x.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.tiles.o {
+	background-color: deepskyblue ;
+  background-image: url(o.png);
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
