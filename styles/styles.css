@@ -84,3 +84,24 @@ h1,h6{
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#resultContainer {
+    background-color: transparent;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+  }
+  
+  #gameResult {
+    font-size: 3rem;
+    margin-bottom: 0;
+    position: center;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+  
+  }
