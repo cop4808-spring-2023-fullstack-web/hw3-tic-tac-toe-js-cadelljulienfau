@@ -1,66 +1,80 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Tic-Tac-Toe!</title>
-    
-    <!-- CSS LINK -->>
-    <link rel="stylesheet" href="./styles/styles.css" />
-    
-    <!--Styles LINK-->>
-    <script src="./scripts/scripts.js" defer></script>>
-  </head>
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+   <title>Tic-Tac-Toe!</title>
+
+   <!-- CSS LINK -->>
+   <link rel="stylesheet" href="./styles/styles.css" />
+
+   <!--Styles LINK-->>
+   <script src="./scripts/scripts.js" defer></script>>
+
+
+</head>
+
 <body>
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    
- <!-- Result dashboard -->
- <div class="wrapper">
-  <div class="sidebar">
-      <h3>Status Bar</h3>
-      <pre>Player Score:<div id="score1" ></div></pre>
-      <pre>CPU Score:<div id="score2"></div></pre>
-      <pre>Tie Score:<div id="score3"> </div></pre>
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 
-      <div id="resultContainer">
-        <h3 id="gameResult"></h3>
-        <p>Auto-Reset *In-Place</p>
-           </div>
-    </div>
-  </div>
-  <div class="mainContainer">
-     <h1 id="title">Tic-Tac-Toe</h1>
-     <h4>Cyber Edition</h4>
-     <h6>By Cadell Julien, Z23505110</h6>
- 
-     <div id="option">
-       
-        <div>
-           <input type="radio" name="choice" id="x">X
-           <input type="radio" name="choice" id="o">O
-           <button class="btn" id="startBtn">Start</button>
-           <button class="tipbtn" id="tipbtn">Tips</button>
-        </div>
-     </div>
-  
-     <p id="playerMessage"></p>
-  <div id="board">
-    <div class="tiles"></div>
-    <div class="tiles"></div>
-    <div class="tiles"></div>
-    <div class="tiles"></div>
-    <div class="tiles"></div>
-    <div class="tiles"></div>
-    <div class="tiles"></div>
-    <div class="tiles"></div>
-    <div class="tiles"></div>
- </div>
- 
+   <!-- Result dashboard -->
+   <div class="wrapper">
+      <div class="sidebar">
+         <h3>Status Bar</h3>
+         <pre>Player Score:<div id="score1" ></div></pre>
+         <pre>CPU Score:<div id="score2"></div></pre>
+         <pre>Tie Score:<div id="score3"> </div></pre>
+
+         <div id="resultContainer">
+            <h3 id="gameResult"></h3>
+            <p>Auto-Reset *In-Place</p>
+         </div>
+      </div>
+
+   </div>
+   <div class="mainContainer">
+      <h1 id="title">Tic-Tac-Toe</h1>
+      <h4>Cyber Edition</h4>
+      <h6>By Cadell Julien, Z23505110</h6>
+
+      <div id="option">
+
+         <div>
+            <input type="radio" name="choice" id="x">X
+            <input type="radio" name="choice" id="o">O
+            <button class="btn" id="startBtn">Start</button>
+            <button class="tipbtn" id="tipbtn">Tips</button>
+         </div>
+      </div>
+
+      <p id="playerMessage"></p>
+
+      <div id="board">
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+         <div class="tiles"></div>
+      </div>
+      <button id="reset">Reset</button>
+   </div>
+
+   </div>
+
 </body>
+
 </html>

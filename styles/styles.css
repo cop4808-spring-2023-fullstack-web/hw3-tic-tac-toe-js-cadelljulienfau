@@ -70,7 +70,7 @@ h1,h6{
 }
 
 .tiles.x {
-	background-color: rgb(224, 150, 212);
+	background-color: #dc23d9;
   background-image: url(x.png);
   background-size: 80%;
   background-position: center;
@@ -78,7 +78,7 @@ h1,h6{
 }
 
 .tiles.o {
-	background-color: rgb(172, 218, 233) ;
+	background-color: rgb(18, 163, 211) ;
   background-image: url(o.png);
   background-size: 80%;
   background-position: center;
