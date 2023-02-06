@@ -15,3 +15,18 @@ body {
       flex-direction: column;
       align-items: center;
   }
+
+  :root {
+	--tiles-size: 130px;
+	--mark-size: calc(var(--tiles-size) * .9);
+}
+
+h1,h6{
+  color:black;
+
+}
+
+#playerMessage {
+   font-size: 30px;
+  color: black;
+}
