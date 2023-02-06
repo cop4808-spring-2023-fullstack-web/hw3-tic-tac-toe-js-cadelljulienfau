@@ -1,0 +1,17 @@
+body {
+    background-color: lightblue;
+    color: white;
+    background-image: url(r.gif);
+    background-size: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transform: scale(.89);
+    -moz-transform: scale(.89);
+    transform: scale(.89);
+  }
+  
+  .mainContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
