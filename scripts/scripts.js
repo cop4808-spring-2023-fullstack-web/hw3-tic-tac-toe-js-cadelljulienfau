@@ -160,3 +160,14 @@ function endGame(winMessage) {
 	}, 1500);
 	return;
 }
+
+//Winning condition checker
+function checkWinner(tiles, currentClass) {
+	return validWins.some((possible) => { //brings win 2d-array. Checks array element in seeing if they pass the test.
+    console.log("Loading Win Logs....Loading Empty Tiles....Loading Possible Win")
+		return possible.every((index) => { //comes back with tiles for which is clicked every turn. Executes function for each array element
+			return tiles[index].classList.contains(currentClass); //gives the tiles which been clikced, since it checks
+      //for sequence of characters. So like a bolean a true or false is given based on such charachters 
+		});
+	});
+}
