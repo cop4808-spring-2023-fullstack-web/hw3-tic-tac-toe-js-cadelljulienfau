@@ -149,3 +149,14 @@ function NextTurn() {
       console.log("Computer Turn")
       }
   }
+
+  //function for what happens towards the end
+function endGame(winMessage) {
+	gameResult.innerHTML = winMessage; //Bringing in messages
+  resultContainer.style.display = ''; //display result in status bar under scores
+	setTimeout(() => { //timer to get it removed
+		mainGame(); //once the timer is resolved the mainGame board will be brought up with anew
+    resultContainer.style.display = 'none';
+	}, 1500);
+	return;
+}
