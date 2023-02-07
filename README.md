@@ -2,6 +2,7 @@
 ## COT 4930 - Full Stack Web Development
 ### Tic-Tac-Toe by Cadell Julien-Z23505110
 #### DUE JAN 11, 2023
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9951484&assignment_repo_type=AssignmentRepo)
 
 ### Summary:
 The way that this game was structured was that it uses bootstrap for the general layout in html. So, creating the grid/tiles was easily accessibile and made. With that being said adding the extra stuff like a player option was the next step. Adding the player option I decided to go with a start button to make sure that the choice was actually picked. So once an option for the player is picked, then start is clicked the board wil be playable.
@@ -39,5 +40,65 @@ I wanted to go a simple route, which means less is more and understandble. I wan
 
 
 ### Resources((LOOKED AT) The Used will be cited in word doc for submission)):
+https://stackoverflow.com/questions/27929349/using-function-to-display-random-numbers-then-ifelse-statement-to-allocate-days
 
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9951484&assignment_repo_type=AssignmentRepo)
+https://www.w3schools.com/js/js_if_else.asp
+
+https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
+https://developer.mozilla.org/en-US/docs/web/css/:root
+
+https://www.w3schools.com/csS/css3_buttons.asp
+
+https://www.w3schools.com/w3css/w3css_containers.asp
+
+https://www.w3schools.com/w3css/w3css_sidebar.asp
+
+https://getbootstrap.com/docs/5.1/layout/containers/
+
+https://getbootstrap.com/docs/5.1/layout/breakpoints/
+
+https://stackoverflow.com/questions/24350860/html-javascript-tic-tac-toe-with-a-2d-array
+
+https://javascript.plainenglish.io/tic-tac-toe-in-javascript-for-beginners-befbb55c0da
+
+https://github.com/CodeExplainedRepo/Tic-Tac-Toe-JavaScript
+
+https://www.thatsoftwaredude.com/content/6189/coding-tic-tac-toe-in-javascript
+
+https://www.geeksforgeeks.org/simple-tic-tac-toe-game-using-javascript/
+
+https://www.studytonight.com/post/building-a-tic-tac-toe-game-in-javascript
+
+https://www.codebrainer.com/blog/tic-tac-toe-javascript-game
+
+https://dev.to/bornasepic/pure-and-simple-tic-tac-toe-with-javascript-4pgn
+
+https://mostafa-samir.github.io/Tic-Tac-Toe-AI/
+
+https://javascript.plainenglish.io/build-tic-tac-toe-game-using-javascript-3afba3c8fdcc
+
+https://www.freecodecamp.org/news/javascript-settimeout-js-timer-to-delay-n-seconds/#:~:text=What%20is%20setTimeout%20%28%29%20in%20JavaScript%3F%201%20Function.,is%20used%20to%20cancel%20a%20setTimeout%20%28%29.%20
+
+https://www.w3schools.com/jsref/met_win_settimeout.asp
+
+https://github.com/vikramvee/JavaScript/tree/master/HA%238
+
+https://github.com/beesmart/JS_tictactoe
+
+https://github.com/simondevyoutube/TicTacToe_WithMinimax
+
+https://gscode.in/tic-tac-toe-games-in-javascript/
+
+https://www.youtube.com/watch?v=LFa9fnQGb3g&list=LL&index=6
+
+https://www.youtube.com/watch?v=23bpce-5s8I&list=LL&index=3
+
+https://www.youtube.com/watch?v=NTmFHSjRjgU&list=LL&index=4&t=4s
+
+https://www.youtube.com/watch?v=h33Srr5J9nY&list=LL&index=8&t=188s
+
+https://www.youtube.com/watch?v=G5Nn9VRNeaU&list=LL&index=9
+
+https://www.youtube.com/watch?v=trKjYdBASyQ
+
