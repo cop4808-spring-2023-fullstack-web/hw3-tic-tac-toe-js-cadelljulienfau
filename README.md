@@ -12,6 +12,29 @@ The computer will have a random chance based on a randomnumber function to go fi
 
 
 ### Game Logic:
+validClick()-
+Holds both x and o pieces. Able to click an empty tile with the x and o pieces. Will be able to to differentiate between the player and computer turn.
+
+startGame()-
+Will hold the opertain next turn function and who's first randomizer. After the start button has been clicked.
+
+mainGame()-
+This function will be the default setting for the game board for which noting has been done as of yet. Meaning it's the main game orgianl state before the start button has been clicked and pieces pieces has been layed out. So after a reset the game will go back to that orgainal game state.
+
+NextTurn()-
+Will set down the 2-array which enables it to be clicked. If a tile is empty this function will allow it to be clicked. After a tile has been clicked an x or o piece will be placed on that tile. A set timeout will be used to notify who's turn it and for less rushed game play. A randomizer will be set to notifty if the computer should go first.
+
+endGame()-
+Will have a who's winner in place, showing who's won that round. When put with other functions it'll help with the scoring.
+
+checkWinner()-
+When tiles which is loaded from the emptytile sis loaded are full or there's none no more there will be 3 pathways that open up. A player winner, cpu winner, and tie. The trash talking system will be set along with this to go with the NextTurn() function.
+
+emptytiles()-
+Carry's empty tile state which can be brought up to the mainGame function to enable a defualt setting main game frame and also to next turn.
+
+Brainstorming-
+I wanted to go a simple route, which means less is more and understandble. I wanted the functions to connect and be interchangeable allowing me more flexiiblty which allows me to  new things easily.
 
 
 
