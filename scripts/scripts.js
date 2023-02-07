@@ -74,3 +74,26 @@ function validClick(e) {
           return;
         }
     }
+
+// Start Game
+let computer, player ; //variables
+function startGame() { 
+  var randomstart=Math.floor(Math.random()*20);
+  console.log("Random Number: " + randomstart);
+  if (randomstart < 12){
+	  alert("Computer: AI RULE!!!!")
+    NextTurn(); //Built for random ai to go first after a random number is sleceted
+    console.trace("Who's turn");
+  }
+  //depends on what was clicked in option
+  const oChoice = document.querySelector('#o').checked;
+	const xChoice = document.querySelector('#x').checked;
+//After choice is made and start is clicked, you'll be able to play on the board
+if (xChoice || oChoice) {
+  gameBoard.style.display = 'grid'; //grid for board is made
+  resetGame.style.display = 'block'; //reset button is made
+  option.style.display = 'none'; //is removed
+}
+	player = xChoice ? xPiece : OPiece; //can only pick
+	computer = player === xPiece ? OPiece : xPiece; //checks if one is picked and then moves to the one that isn't
+}
