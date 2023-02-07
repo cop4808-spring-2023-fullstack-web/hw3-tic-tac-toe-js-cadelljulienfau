@@ -35,3 +35,42 @@ mainGame(); //Holds the game
 
 const tilesArray = Array.from(tiles); //Tile maker
 tilesArray.forEach((tiles) => tiles.addEventListener('click', validClick, { once: true })); //Tile Clicker
+
+//Clicker function for turns
+function validClick(e) {
+	if (e.target.classList.contains(xPiece) || e.target.classList.contains(OPiece)) {
+		e.target.removeEventListener('click', validClick); //once that option to pick x or o the clicks activates
+	} 
+  else {
+		e.target.classList.add(player); //the activations to click a tiles/tile
+    console.log("Next Turns");// notify's next turn
+
+		if (checkWinner(tiles, player)) { //checking the player data on tiles
+			endGame('A Tech Savy!! YOU WON'); //We got a winner accounment
+      console.log("Player Has Won") //notifys play has won in system
+      console.log("Commencing Auto-Reset") //the reset board will begin
+      playerMessage.innerHTML = "I went easy on you!!!!"; //CPU is a tough match
+      if (playerMessage.innerHTML == "I went easy on you!!!!") { //add's points based off of words
+        playerScore = playerScore +1;
+        document.getElementById("score1").innerHTML= playerScore;
+        console.log("Added 1 point to Player Score");
+    }
+      } 
+      else {
+        NextTurn(); //Next turn
+      }
+	}
+
+	if (emptytiles().length === 0 && !checkWinner(tiles, xPiece) && !checkWinner(tiles, OPiece)) {
+		endGame("Tough Match! It's a tie"); //If there is no more tiles than the game is a tie
+    console.log("Game is Tied"); //notify tie game
+    console.log("Commencing Auto-Reset"); //notify board reset
+    playerMessage.innerHTML = "We're Just getting started"; //CPU talking
+    if (playerMessage.innerHTML == "We're Just getting started") { //add's point based off of words for tie
+      tied = tied +1;
+      document.getElementById("score3").innerHTML= tied;
+      console.log("Added 1 point to Tie Score");
+      }
+          return;
+        }
+    }
