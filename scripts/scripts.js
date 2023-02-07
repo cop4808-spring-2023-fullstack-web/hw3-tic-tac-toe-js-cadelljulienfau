@@ -171,3 +171,11 @@ function checkWinner(tiles, currentClass) {
 		});
 	});
 }
+
+//For empty tiles
+function emptytiles() {
+	return tilesArray.filter((tiles) => !tiles.classList.contains(xPiece) && !tiles.classList.contains(OPiece));  
+  //Helps out with the method of creating new array filled with already implemented elemetns that get passed a function.
+  //So sort of like a copy and paste which does not change the orginal array
+}
+
