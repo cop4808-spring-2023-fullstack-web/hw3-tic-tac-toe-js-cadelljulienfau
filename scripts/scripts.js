@@ -8,3 +8,11 @@ const resultContainer = document.querySelector('#resultContainer'); //holds the 
 const gameResult = document.querySelector('#gameResult'); //result shower
 const resetGame = document.querySelector('#reset'); //resets the game
 const option = document.querySelector('#option'); //Pick between x and o
+
+//score variables
+let tied=0; //for tie score
+let playerScore=0; // fore player score
+let computerScore=0; //for cpu score
+
+const xPiece = 'x'; //X shower
+const OPiece = 'o'; //O SHower
