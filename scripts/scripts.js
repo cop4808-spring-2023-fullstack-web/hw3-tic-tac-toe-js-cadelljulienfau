@@ -97,3 +97,19 @@ if (xChoice || oChoice) {
 	player = xChoice ? xPiece : OPiece; //can only pick
 	computer = player === xPiece ? OPiece : xPiece; //checks if one is picked and then moves to the one that isn't
 }
+
+//Original Game State
+function mainGame() { //This functions put's everything together and runs it
+    console.trace("Main game boot")
+      const xChoice = (document.querySelector('#x').checked = false); //used for x input
+    const oChoice = (document.querySelector('#o').checked = false); //used for o input
+    option.style.display = 'block'; //buttons are laid until but will be removed once clicked
+    resetGame.style.display = 'none'; //doesn't display reset button until start is clicked
+      tiles.forEach((tiles) => (tiles.classList.contains('x') ? tiles.classList.remove('x') : tiles.classList.remove('o'))); //runs a quick array to check if a piece is already states and stops the roation of new piece from being added to it.
+      playerMessage.innerHTML = "Select X or O then PRESS START";
+    document.getElementById('tipbtn').onclick = () =>
+    {
+      alert("1. Reclick board if game is stuck || 2. Gain adavantage by going for the middle || 3. Click the Pig for Good Luck. || 4. Use the status bar on the left to keep tab of score. || 6. Select X or O then press start to start if board is still blank|| 5. HAVE FUN!!!")
+      console.trace("Tip button clicked")
+    } //For tips the player might want to know
+  }  
