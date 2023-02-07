@@ -27,3 +27,11 @@ const validWins = [
 	[ 0, 4, 8 ],
 	[ 2, 4, 6 ]
 ]; //Winning Placements and also a 2d array
+
+resetGame.addEventListener('click', mainGame); //Clicker for tile
+document.querySelector('#startBtn').addEventListener('click', startGame); //clicker forStart button to start game
+
+mainGame(); //Holds the game
+
+const tilesArray = Array.from(tiles); //Tile maker
+tilesArray.forEach((tiles) => tiles.addEventListener('click', validClick, { once: true })); //Tile Clicker
