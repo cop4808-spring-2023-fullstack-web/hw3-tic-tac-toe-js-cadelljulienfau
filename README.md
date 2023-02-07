@@ -2,6 +2,7 @@
 ## COT 4930 - Full Stack Web Development
 ### Tic-Tac-Toe by Cadell Julien-Z23505110
 #### DUE JAN 11, 2023
+![H3_GIF](https://user-images.githubusercontent.com/123437478/217146455-fadad9a8-1a61-49e1-bf6f-1860a74a5169.gif)
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9951484&assignment_repo_type=AssignmentRepo)
 
 ### Summary:
