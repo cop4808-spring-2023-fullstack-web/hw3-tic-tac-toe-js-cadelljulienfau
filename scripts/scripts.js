@@ -113,3 +113,39 @@ function mainGame() { //This functions put's everything together and runs it
       console.trace("Tip button clicked")
     } //For tips the player might want to know
   }  
+
+  //Next turn for player and CPU
+function NextTurn() {
+    console.log("Tracing turns")
+      tilesArray.forEach((tiles) => tiles.removeEventListener('click', validClick)); //Clicker for each tile turn
+      if (emptytiles().length !== 0) {
+          setTimeout(() => { //able to click empty time then timer is set for next person turn
+              const randEmptytiles = emptytiles()[Math.floor(Math.random() * emptytiles().length)];
+              // Add eventListeners once computer has moved after a certain time
+              tilesArray.forEach((tiles) => tiles.addEventListener('click', validClick, { once: true }));
+              randEmptytiles.classList.add(computer); 
+              emptytiles(); //bring back empty tile
+              //Checks if computer has won after making move
+              if (checkWinner(tiles, computer)) {   //Goes ahead in checks the tiles made by the computer
+                  endGame('Well thats to bad...');
+          console.log("CPU Won")
+          console.log("Commencing Auto-Reset")
+          playerMessage.innerHTML = "You Suck D:";//Trash talk message for player who lost
+         //score adder
+        if (playerMessage.innerHTML == "You Suck D:") { //Used to add point from string of words
+          computerScore = computerScore +1; //Adds a put to the computer score
+          document.getElementById("score2").innerHTML=  computerScore;
+          console.log("Added 1 point to CPU Score")
+          }
+                  return;
+              }
+        //Player Turn once last tiles has been clicked
+              playerMessage.innerHTML = 'Player Move!';
+        console.log("Player Turn")
+          }, 300);
+        //CPU turn once last tiles has been clicked
+          playerMessage.innerHTML = 'CPU Move!';
+      console.log("Tile Clicked")
+      console.log("Computer Turn")
+      }
+  }
